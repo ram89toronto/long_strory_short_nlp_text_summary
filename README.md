@@ -1,4 +1,4 @@
-# NLP Text Summary  
+# NLP Text Summary for day to day needs
 
 ## The summarization technique used in the above example is "Abstractive Summarization"
 
