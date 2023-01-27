@@ -1,4 +1,4 @@
-# NLP Text Summary for day to day needs
+# NLP Text Summary - " Long Story Short - Load Text, Summarize & Listen "
 
 ## The summarization technique used in the above example is "Abstractive Summarization"
 
