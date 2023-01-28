@@ -44,17 +44,17 @@ data = st.text_area("Paste your text here...",value=" You can just delete this t
 st.snow()
 # Apply transformers 
 summarizer = pipeline("summarization")
-st.subheader("Min & Max of length for your Summary ...")
+#st.subheader("Min & Max of length for your Summary ...")
 
-slider_range =  st.slider(" Minimum and maximum words", value=[10,500])
-min_len = slider_range[0]
-max_len = slider_range[1]
+#slider_range =  st.slider(" Minimum and maximum words", value=[10,500])
+#min_len = slider_range[0]
+#max_len = slider_range[1]
 
 
 # Display the text
 st.write("## Step 2: Click to generate summary  ")
 if st.button("Generate Summary"):
-    summary =  summarizer(data, max_length=max_len, min_length=min_len)
+    summary =  summarizer(data, max_length=90, min_length=10, do_sample=False)
     output = summary[0]['summary_text']  
     aud = gTTS(text= output, lang = 'en', slow= False)
     aud.save("long_story_short.mp3") 	
