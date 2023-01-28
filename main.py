@@ -37,6 +37,8 @@ column3.markdown("[![,](https://img.icons8.com/ios-filled/50/null/github.png)](h
 st.image("lsts.gif")
 st.write("Image Credit: https://tinyurl.com/y6wdjsr7 ")
 
+st.image("nlptextaudio.png")
+
 st.write(" ## Step 1: Paste your text ")
 data = st.text_area("Paste your text here...",value="", height=600)
 st.snow()
@@ -52,6 +54,7 @@ summary =  summarizer(data, max_length=max_len, min_length=min_len)
 output = summary[0]['summary_text'] 
 aud = gTTS(text= output, lang = 'en', slow= False)
 aud.save("long_story_short.mp3")
+
 
 # Display the text
 st.write("## Step 2: Click to generate summary  ")
