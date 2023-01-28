@@ -14,3 +14,4 @@ streamlit==1.17.0
 torch==1.12.1
 virtualenv==20.16.5
 webencodings==0.5.1
+transformers
