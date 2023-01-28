@@ -55,19 +55,19 @@ summarizer = pipeline("summarization")
 st.write("## Step 2: Click to generate summary  ")
 if st.button("Generate Summary"):
     summary =  summarizer(data, max_length=90, min_length=10, do_sample=False)
-    output = summary[0]['summary_text']  
+    output = summary[0]['summary_text']
     aud = gTTS(text= output, lang = 'en', slow= False)
-    aud.save("long_story_short.mp3") 	
+    aud.save("long_story_short.mp3")
     st.write(output)
     st.snow()
+    st.write("## Step 3: Click and Connect to your headset and Listen to the Summary...")
+    if st.button("Listen to the Summary"):
+        st.audio("long_story_short.mp3")
+        st.snow()
+    else:
+        st.write("Happy Listening")
 else:
     st.write("Waiting for input...")
 # Play the audio 
-st.write("## Step 3: Click and Connect to your headset and Listen to the Summary...")
-if st.button("Listen to the Summary"):
-    st.audio("long_story_short.mp3")
-    st.snow()
-else: 
-    st.write("Happy Listening")
 
-            
+
