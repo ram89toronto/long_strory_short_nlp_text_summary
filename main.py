@@ -45,7 +45,7 @@ data = st.text_area("Paste your text here...",value="Just replace this text with
 summarizer = pipeline("summarization")
 st.subheader("Min & Max of length for your Summary ...")
 
-slider_range =  st.slider(" Minimum and maximum words", value=[10,500])
+slider_range =  st.slider(" Minimum and maximum words", 0, 500,(35,95))
 min_len = slider_range[0]
 max_len = slider_range[1]
 
