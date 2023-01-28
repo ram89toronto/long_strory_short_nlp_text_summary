@@ -40,7 +40,7 @@ st.image("nlptextaudio.png")
 
 st.write(" ## Step 1: Paste your text ")
 data = st.text_area("Paste your text here...",value="Just replace this text with yours that is waiting to condense", height=600)
-st.snow()
+
 # Apply transformers 
 summarizer = pipeline("summarization")
 st.subheader("Min & Max of length for your Summary ...")
@@ -60,14 +60,14 @@ aud.save("long_story_short.mp3")
 st.write("## Step 2: Click to generate summary  ")
 if st.button("Generate Summary"):
     st.write(output)
-    st.snow()
+    
 else:
     st.write("Waiting for input...")
 # Play the audio 
 st.write("## Step 3: Click and Connect to your headset and Listen to the Summary...")
 if st.button("Listen to the Summary"):
     st.audio("long_story_short.mp3")
-    st.snow()
+    
 else: 
     st.write("Happy Listening")
 
