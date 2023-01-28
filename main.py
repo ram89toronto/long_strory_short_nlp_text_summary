@@ -39,7 +39,7 @@ st.write("Image Credit: https://tinyurl.com/y6wdjsr7 ")
 st.image("nlptextaudio.png")
 
 st.write(" ## Step 1: Paste your text ")
-data = st.text_area("Paste your text here...",value="", height=600)
+data = st.text_area("Paste your text here...",value="Just replace this text with yours that is waiting to condense", height=600)
 st.snow()
 # Apply transformers 
 summarizer = pipeline("summarization")
