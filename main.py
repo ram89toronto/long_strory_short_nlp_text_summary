@@ -6,7 +6,7 @@ from gtts import gTTS
 
 
 #  Displaying the required information on site
-st.write(' # Long Story Short -  A NLP based Text Summary for Day to Day Work')
+st.write(' # Long Story Short Generator - An NLP Project')
 st.write(''' Happy to build this "Long Story Short !!!" an NLP summarizing app for busy professionals, students, and entrepreneurs.
 
 ### Simplifies day-to-day tasks such as 
