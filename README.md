@@ -1,4 +1,4 @@
-# NLP Text Summary - "Long Story Short - Load Text, Summarize & Listen "
+# NLP Text Summary - "Long Story Short Generator " 
 
 ## The summarization technique used in the above example is "Abstractive Summarization"
 
