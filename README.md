@@ -1,5 +1,7 @@
 # NLP Text Summary - "Long Story Short Generator " 
 
+Weblink - https://ramrallabandi.link/2023/01/28/nlp-app-load-text-read-summary-listen/
+
 ## The summarization technique used in the above example is "Abstractive Summarization"
 
  Happy to build this "Long Story Short !!!" an NLP summarizing app for busy professionals, students, and entrepreneurs.
