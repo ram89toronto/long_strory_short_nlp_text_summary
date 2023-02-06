@@ -4,6 +4,17 @@ from transformers import pipeline
 import streamlit as st
 from gtts import gTTS
 
+# Setting page Configuration
+
+st.set_page_config(page_title = "Cool looking Maps using Data",
+    page_icon = "📑 📟 🎧 ",
+    layout = "wide",
+    initial_sidebar_state = "expanded",
+    menu_items = { 'About': '# Load Text -> Read & Listen Summary ',
+        'Get Help' : 'https://ramrallabandi.link',
+        'Report a bug': 'https://ramrallabandi.link/contact/'
+        } )
+
 
 #  Displaying the required information on site
 st.write(' # Long Story Short Generator - An NLP Project')
