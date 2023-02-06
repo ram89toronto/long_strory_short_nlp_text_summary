@@ -10,7 +10,7 @@ st.set_page_config(page_title = "Cool looking Maps using Data",
     page_icon = "📑 📟 🎧 ",
     layout = "wide",
     initial_sidebar_state = "expanded",
-    menu_items = { 'About': '# Load Text -> Read & Listen Summary ',
+    menu_items = { 'About': '# Load Text -> Read & Listen to Summary ',
         'Get Help' : 'https://ramrallabandi.link',
         'Report a bug': 'https://ramrallabandi.link/contact/'
         } )
